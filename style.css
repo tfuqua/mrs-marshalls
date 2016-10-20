@@ -34,11 +34,21 @@ header {
   margin-top: -15px;
   overflow: hidden;
   padding-bottom: 50px; }
+  .hero.hero-1 .hero-text-wrapper > div {
+    text-align: center; }
+    @media (min-width: 900px) {
+      .hero.hero-1 .hero-text-wrapper > div {
+        padding-left: 15px;
+        text-align: left; } }
   .hero.hero-1 .hero-text {
-    text-align: center;
+    text-align: left;
     margin-top: 45px;
-    background: transparent;
-    font-size: 45px;
+    background: rgba(0, 0, 0, 0.5);
+    width: auto;
+    margin: 30px auto 0;
+    display: inline-block;
+    font-family: 'Kalam', cursive;
+    font-size: 38px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
@@ -47,21 +57,71 @@ header {
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
     @media (min-width: 481px) {
       .hero.hero-1 .hero-text {
-        text-align: left; } }
+        font-size: 45px; } }
     .hero.hero-1 .hero-text .hero-button a {
       border-radius: 5px;
       background-image: linear-gradient(to bottom, #db2c10, #bf311a);
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
       text-shadow: none;
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 500;
       font-style: normal;
       font-stretch: normal;
       text-align: center;
-      color: #ffffff; }
+      color: #ffffff;
+      font-family: "Gotham SSm A", "Gotham SSm B"; }
 
-.hero.hero-3 {
-  padding: 20px 0px; }
+.hero.hero-2 {
+  padding: 20px 0px 0px;
+  background-image: url("images/light-wood.png");
+  background-position: top-left;
+  background-size: cover;
+  overflow: hidden; }
+  .hero.hero-2 .container-fluid {
+    padding-bottom: 0px; }
+    @media (min-width: 481px) {
+      .hero.hero-2 .container-fluid {
+        padding-bottom: 40px; } }
+  .hero.hero-2 .hero-text {
+    position: relative;
+    background: transparent;
+    z-index: 300;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.59;
+    color: #ffffff;
+    margin-bottom: 0; }
+    @media (min-width: 900px) {
+      .hero.hero-2 .hero-text {
+        margin-bottom: 30px; } }
+    @media (min-width: 900px) {
+      .hero.hero-2 .hero-text {
+        width: 45%; } }
+    .hero.hero-2 .hero-text h3 {
+      font-family: 'Kalam', cursive;
+      font-size: 40px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.1;
+      color: #ffffff; }
+    .hero.hero-2 .hero-text .hero-button a {
+      border-radius: 5px;
+      background-image: linear-gradient(to bottom, #db2c10, #bf311a);
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1); }
+  .hero.hero-2 .hero-img-wrapper {
+    width: 90%; }
+    @media (min-width: 481px) {
+      .hero.hero-2 .hero-img-wrapper {
+        position: absolute;
+        width: 60%;
+        right: 0;
+        bottom: 0; } }
+    .hero.hero-2 .hero-img-wrapper img {
+      width: 100%;
+      height: auto; }
 
 .featured-content-wrapper {
   background-image: none; }
@@ -71,6 +131,7 @@ header {
     z-index: 2; }
     .featured-content-wrapper .container-fluid .featured-item {
       background: #fff;
+      border-radius: 0px;
       position: relative;
       box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15);
@@ -104,8 +165,13 @@ header {
         max-width: 75%;
         min-width: 0%;
         height: auto; }
+        @media (min-width: 900px) {
+          .featured-content-wrapper .container-fluid .featured-img img {
+            min-height: auto;
+            max-width: 94%; } }
         @media (min-width: 1080px) {
           .featured-content-wrapper .container-fluid .featured-img img {
+            max-width: 85%;
             margin-top: -45px; } }
     .featured-content-wrapper .container-fluid .featured-body {
       font-size: 18px;
@@ -125,14 +191,16 @@ header {
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1); }
     .featured-content-wrapper .container-fluid h3 {
       width: 100%;
-      font-size: 32px;
-      margin: 0;
-      padding: 25px 30px 15px;
-      background: url("images/orange.png") top left repeat;
-      font-weight: 300;
+      text-transform: capitalize;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: 'Kalam', cursive;
       font-style: normal;
       font-stretch: normal;
       color: #ffffff;
-      text-shadow: none; }
+      text-shadow: none;
+      margin: 0;
+      padding: 30px 30px 15px;
+      background: url("images/orange.png") top left repeat; }
     .featured-content-wrapper .container-fluid .featured-item:nth-child(2) h3 {
       background: url("images/purple.png") top left repeat; }
