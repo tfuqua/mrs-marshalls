@@ -43,7 +43,7 @@ get_header(); ?>
                 <div class="featured-section">
                   <div class="featured-body">
                     <div class="flex-div">
-                    <div>
+                    <div class="content">
                       <?php echo the_sub_field('body');?>
                     </div>
                     <div class="featured-img">
@@ -82,7 +82,7 @@ get_header(); ?>
             </div>
             <div class="hero-img-wrapper">
               <?php echo wp_get_attachment_image(get_field('hero_2_image'), 'full', false, array( 'class' => '') ); ?>
-            </div>    
+            </div>
           </div>
         </div>
       <?php } ?>

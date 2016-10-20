@@ -34,7 +34,12 @@
     }
 
     .featured-section {
-      margin:20px;
+      margin:0px 20px 20px;
+
+      @media (min-width: $screen-md-min) {
+        margin-top:20px;
+      }
+
       z-index: 200;
       background: none;
 
@@ -55,6 +60,12 @@
       }
     }
 
+    @media (min-width: $screen-md-min) {
+          .content{
+        padding-top:20px;
+      }
+    }
+
     .featured-img {
       text-align: center;
 
@@ -65,11 +76,11 @@
 
         @media (min-width: $screen-md-min) {
           min-height: auto;
-          max-width:94%;
+          max-width:100%;
         }
 
         @media (min-width: $screen-lg-min) {
-          max-width:85%;
+          max-width:100%;
           margin-top:-45px;
         }
       }
