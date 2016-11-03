@@ -1,4 +1,4 @@
-.hero.hero-1 {
+.hero {
   margin-top:-15px; //move hero image up to header
   overflow: hidden;
   padding-bottom: 50px;
@@ -121,4 +121,9 @@
       height: auto;
     }
   }
+}
+
+.mini-hero{
+    margin-bottom: 50px;
+    min-height: 300px;
 }

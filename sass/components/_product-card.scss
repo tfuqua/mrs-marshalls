@@ -1,0 +1,47 @@
+.product-list{
+  padding:0 0 50px;
+}
+
+.product-card{
+  border: 1px solid #cacaca;
+  border-radius: 0;
+  display: block;
+
+  .product-img{
+    margin:0;
+    overflow: hidden;
+    border-radius: 0;
+
+    @media (min-width: $screen-md-min) {
+
+    }
+
+    img {
+      min-width: 100%;
+      height: auto;
+    }
+  }
+
+  .product-section{
+    padding-top:0;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    color: #000;
+
+    h3 {
+      background: url('images/red.png') top left repeat;
+      padding:15px 30px;
+      font-family: 'Kalam', cursive;
+      font-size: 30px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      color: #fff;
+      margin:0 -30px 10px;
+    }
+  }
+}

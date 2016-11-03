@@ -1,0 +1,26 @@
+.gallery {
+   margin: auto;
+}
+.gallery-item {
+   margin:20px 0 40px;
+   text-align: center;
+   width:100%;
+
+   @media (min-width: $screen-sm-min) {
+     width: 50%;
+     float: left;
+   }
+
+   @media (min-width: $screen-md-min) {
+     width: 33%;
+   }
+}
+
+.gallery-item img {
+   border: 2px solid #cfcfcf;
+   height: auto;
+   width: 70%;
+}
+.gallery-caption {
+   margin-left: 0;
+}

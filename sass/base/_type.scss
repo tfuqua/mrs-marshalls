@@ -1,0 +1,13 @@
+blockquote{
+  font-family: Kalam;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.1;
+  color: #000000;
+
+  &:before, &:after{
+    border-top: solid 2px #dac174;
+  }
+}

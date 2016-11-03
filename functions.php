@@ -11,4 +11,21 @@ function mrsmarshalls_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'mrsmarshalls_enqueue_styles' );
 
+function my_remove_page_template( $pages_templates ) {
+
+    unset( $pages_templates['templates/page-products.php'] );
+    unset( $pages_templates['templates/page-product.php'] );
+
+    return $pages_templates;
+}
+add_filter( 'theme_page_templates', 'my_remove_page_template' );
+
+
+function my_gallery_style() {
+    return "
+";
+}
+add_filter( 'gallery_style', 'my_gallery_style', 99 );
+add_filter( 'use_default_gallery_style', '__return_false' );
+
 ?>
