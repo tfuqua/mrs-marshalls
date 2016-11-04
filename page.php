@@ -30,8 +30,7 @@ get_header(); ?>
 
         <div class="container-fluid">
         	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-        		<div class="entry-content">
+        		<div class="entry-content col-md-10 col-md-push-1">
         			<?php
         				the_content();
 
