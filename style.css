@@ -20,22 +20,20 @@ header {
   position: relative;
   border-top: none;
   margin-bottom: 15px; }
-  header .brand {
-    width: 100%; }
-    header .brand img {
-      position: absolute;
-      height: 80px;
-      top: 2px;
-      margin: 0;
-      margin-left: -65px;
-      left: 50%;
-      z-index: 600; }
-      @media (min-width: 900px) {
-        header .brand img {
-          top: -12.5px;
-          margin: 0;
-          height: 100px;
-          left: 15px; } }
+  header .brand img {
+    position: absolute;
+    height: 80px;
+    top: 2px;
+    margin: 0;
+    margin-left: -65px;
+    left: 50%;
+    z-index: 600; }
+    @media (min-width: 900px) {
+      header .brand img {
+        top: -12.5px;
+        margin: 0;
+        height: 100px;
+        left: 15px; } }
 
 @media (max-width: 899px) {
   html.show-menu .nav-wrapper {
