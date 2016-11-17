@@ -4,23 +4,8 @@
 
 .product-card{
   border: 1px solid #cacaca;
-  border-radius: 0;
+  @include border-radius(0);
   display: block;
-
-  .product-img{
-    margin:0;
-    overflow: hidden;
-    border-radius: 0;
-
-    @media (min-width: $screen-md-min) {
-
-    }
-
-    img {
-      min-width: 100%;
-      height: auto;
-    }
-  }
 
   .product-section{
     padding-top:0;

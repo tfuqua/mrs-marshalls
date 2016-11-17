@@ -18,10 +18,15 @@ get_header(); ?>
         <div class="hero-text-wrapper">
           <div>
             <div class="hero-text">
-              <?php echo get_field('hero_text')?>
+              <div class="hero-header">
+                <?php echo get_field('hero_heading')?>
+              </div>
+              <div class="hero-body">
+                <?php echo get_field('hero_body')?>
+              </div>
               <?php if(get_field('button_text')) { ?>
-              <div class="hero-button">
-                <a href="<?php echo get_field('button_link')?>"><?php echo get_field('button_text')?></a>
+              <div>
+                <a class="button" href="<?php echo get_field('button_link')?>"><?php echo get_field('button_text')?></a>
               </div>
               <?php } ?>
             </div>
@@ -38,7 +43,6 @@ get_header(); ?>
           <div class="container-fluid">
             <?php while ( have_rows('featured_content') ) : the_row(); ?>
               <div class="featured-item">
-                <div class="featured-border"></div>
                 <h3><?php echo the_sub_field('heading');?></h3>
                 <div class="featured-section">
                   <div class="featured-body">
@@ -50,8 +54,8 @@ get_header(); ?>
                       <?php echo wp_get_attachment_image(get_sub_field('image'), 'medium', false, array( 'class' => 'lazy-load'));?>
                     </div>
                     </div>
-                    <div class="featured-button">
-                      <a>
+                    <div>
+                      <a class="button" href="<?php echo the_sub_field('button_link'); ?>">
                         <?php echo the_sub_field('button_text');?>
                       </a>
                     </div>
@@ -68,15 +72,15 @@ get_header(); ?>
       	<div class="hero hero-2">
           <div class="container-fluid">
             <div class="hero-text">
-              <h3>
-                <?php echo get_field('hero_header')?>
-              </h3>
-              <div>
-                <?php echo get_field('hero_2_text')?>
+              <div class="hero-header">
+                <?php echo get_field('hero_2_heading')?>
               </div>
-              <?php if(get_field('button_text')) { ?>
+              <div class="hero-body">
+                <?php echo get_field('hero_2_body')?>
+              </div>
+              <?php if(get_field('button_2_text')) { ?>
               <div class="hero-button">
-                <a href="<?php echo get_field('button_2_link')?>"><?php echo get_field('button_2_text')?></a>
+                <a class="button" href="<?php echo get_field('button_2_link')?>"><?php echo get_field('button_2_text')?></a>
               </div>
               <?php } ?>
             </div>

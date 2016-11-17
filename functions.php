@@ -20,12 +20,4 @@ function my_remove_page_template( $pages_templates ) {
 }
 add_filter( 'theme_page_templates', 'my_remove_page_template' );
 
-
-function my_gallery_style() {
-    return "
-";
-}
-//add_filter( 'gallery_style', 'my_gallery_style', 99 );
-add_filter( 'use_default_gallery_style', '__return_false' );
-
 ?>
