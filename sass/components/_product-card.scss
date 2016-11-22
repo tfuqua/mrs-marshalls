@@ -7,6 +7,10 @@
   @include border-radius(0);
   display: block;
 
+  .product-img{
+    @include border-radius(0);
+  }
+
   .product-section{
     padding-top:0;
     font-size: 18px;

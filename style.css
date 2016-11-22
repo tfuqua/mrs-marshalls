@@ -63,6 +63,7 @@ header {
     line-height: 1.11; }
     .hero .hero-text .hero-header {
       font-size: 38px;
+      line-height: 1.15;
       color: #ffffff;
       font-family: 'Kalam', cursive; }
       @media (min-width: 481px) {
@@ -94,7 +95,6 @@ header {
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.59;
     color: #ffffff;
     margin-bottom: 0; }
     @media (min-width: 900px) {
@@ -241,6 +241,13 @@ header {
   border-radius: 0;
   background-clip: padding-box;
   display: block; }
+  .product-card .product-img {
+    -webkit-background-clip: padding-box;
+    -webkit-border-radius: 0;
+    -moz-background-clip: padding-box;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box; }
   .product-card .product-section {
     padding-top: 0;
     font-size: 18px;
