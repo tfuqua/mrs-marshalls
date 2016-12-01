@@ -154,6 +154,8 @@ header {
       .featured-content-wrapper .container-fluid .featured-item:nth-child(n) {
         background: #fff; }
       .featured-content-wrapper .container-fluid .featured-item:after {
+        top: 0;
+        left: 0;
         content: "";
         border: 1px solid #dac174;
         position: absolute;
