@@ -40,7 +40,7 @@ get_header(); ?>
     <?php
       if( have_rows('featured_content') ) { ?>
         <div class="featured-content-wrapper">
-          <div class="container-fluid">
+          <div class="featured-items">
             <?php while ( have_rows('featured_content') ) : the_row(); ?>
               <div class="featured-item">
                 <h3><?php echo the_sub_field('heading');?></h3>
@@ -54,11 +54,11 @@ get_header(); ?>
                       <?php echo wp_get_attachment_image(get_sub_field('image'), 'medium', false, array( 'class' => 'lazy-load'));?>
                     </div>
                     </div>
-                    <div>
-                      <a class="button" href="<?php echo the_sub_field('button_link'); ?>">
-                        <?php echo the_sub_field('button_text');?>
-                      </a>
-                    </div>
+                  </div>
+                  <div>
+                    <a class="button" href="<?php echo the_sub_field('button_link'); ?>">
+                      <?php echo the_sub_field('button_text');?>
+                    </a>
                   </div>
                 </div>
               </div>

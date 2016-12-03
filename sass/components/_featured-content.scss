@@ -2,7 +2,7 @@
 
   background-image: none;
 
-  .container-fluid {
+  .featured-items {
 
       padding: 0 30px;
       margin: 0 auto;
@@ -99,6 +99,7 @@
 
       @media (min-width: $screen-md-min) {
         text-align: left;
+        @include flex(1 0 auto);
       }
     }
 
