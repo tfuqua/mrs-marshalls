@@ -69,7 +69,8 @@ get_header(); ?>
 
       <!-- Hero Image -->
       <?php if(get_field('hero_2_image')) { ?>
-      	<div class="hero hero-2">
+      <?php $background = wp_get_attachment_image_src(get_field('hero_2_image_bg'), 'full', false); ?>
+      	<div class="hero hero-2" style="background-image: url('<?php echo $background[0] ?>');">
           <div class="container-fluid">
             <div class="hero-text">
               <div class="hero-header">
